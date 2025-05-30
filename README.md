@@ -1,26 +1,33 @@
-# CEP Lookup Python
-A simple Python script to search address information from a Brazilian CEP (postal code) using a public API. This project runs with no external dependencies — just pure Python.
-## 🔍 Features
-- Uses the [ViaCEP](https://viacep.com.br/) public API  
-- Takes CEP input via command line  
-- Returns formatted address data  
-- No external libraries required
-## 📁 Project Structure
-cep-lookup-python/  
-├── main.py           # Main script  
-├── README.md         # Project documentation  
-├── .gitignore        # Git configuration  
-└── LICENSE           # MIT License
-## ▶️ How to Run
-Make sure Python is installed on your system. Then, open your terminal and run:
-py main.py
-You’ll be prompted to enter a CEP (only numbers).
-## 📌 Example
-Enter the CEP (only numbers): 01001000  
-Address found:  
-Street: Praça da Sé  
-Neighborhood: Sé  
-City: São Paulo  
+# CEP Lookup (Python)
+A simple Python script to search for address data based on Brazilian ZIP codes (CEP), using a public API — all without external dependencies.
+## 📌 What It Does
+This script receives a CEP (Brazilian postal code) as input and returns formatted address details, using the [ViaCEP API](https://viacep.com.br/).
+## 🛠 How to Run
+Make sure Python is installed and accessible via terminal. Then run:
+```bash
+py cep-lookup.py
+```
+You'll be prompted to enter a CEP. Example:
+```
+Enter the CEP (only numbers): 01001000
+```
+And the result will look like:
+```
+Address found:
+Street: Praça da Sé
+Neighborhood: Sé
+City: São Paulo
 State: SP
-## 🤝 License
-This project is licensed under the MIT License.
+```
+## 🔍 Why This Project?
+This project was created to demonstrate basic usage of:
+- Python input/output
+- Handling HTTP requests with built-in libraries (`urllib`)
+- Parsing JSON
+- Simple CLI applications
+It’s lightweight, educational, and requires **no dependencies**.
+## 📁 Files
+- `cep-lookup.py` – Main Python script
+- `README.md` – Documentation
+- `.gitignore` – Ignores `__pycache__/` and other environment files
+- `LICENSE` – MIT License
